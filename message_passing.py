@@ -1,14 +1,5 @@
 import numpy as np
-
-p_b = np.array([0.97, 0.01, 0.02])
-p_a_given_b = np.array([[0.9,0.8,0.3],[0.1,0.2,0.7]])
-
-f_ab = p_a_given_b * p_b
-f_bcd = np.array([[[0.9,0.08,0.01,0.01],[0.8,0.17,0.01,0.02],[0.1,0.01,0.87,0.02]],
-                  [[0.3,0.05,0.05,0.6],[0.4,0.05,0.15,0.4],[0.01,0.01,0.97,0.01]]])
-f_c = np.array([0.7,0.3])
-f_de = np.array([[0.99,0.99,0.4,0.9],[0.01,0.01,0.6,0.1]])
-f_cf = np.array([[0.99,0.2],[0.01,0.8]])
+import string as st
 
 def leaf_messages_variable(leaf):
     ''' Returns the leaf message from a variable, i.e. 1.
